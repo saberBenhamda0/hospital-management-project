@@ -1,0 +1,200 @@
+
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200"
+  >
+    <div class="flex flex-col min-h-screen">
+      <header
+        class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10 border-b border-slate-200 dark:border-slate-800"
+      >
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center space-x-4">
+              <div class="text-primary">
+                <svg
+                  class="lucide lucide-heart-pulse"
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                  <path d="M3.22 12H9.5l.7-1 2.1 4.4 3-7 1.7 3h3.3"></path>
+                </svg>
+              </div>
+              <h1 class="text-xl font-bold text-slate-900 dark:text-white">HealthHub</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+              <a
+                class="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="#"
+                >Dashboard</a
+              >
+              <a class="text-sm font-medium text-primary dark:text-primary font-semibold" href="#"
+                >My Scans</a
+              >
+              <a
+                class="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="#"
+                >Messages</a
+              >
+              <a
+                class="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="#"
+                >Profile</a
+              >
+            </nav>
+            <div class="flex items-center space-x-4">
+              <button
+                class="relative rounded-full p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 hover:text-slate-700 dark:hover:text-slate-200"
+              >
+                <span class="material-symbols-outlined">notifications</span>
+              </button>
+              <div
+                class="w-10 h-10 rounded-full bg-cover bg-center"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPJz9vz_5P35rcHsgEPeLLjjTyUt6EuoZzl3LThevMtuJCbVXaDJh8-2PMZMx7pqZbI9X5nKluTUmYIZhrDSNVMvTSM9A42PWbmSwjdyD8PZniqEQe43og8I0uCyBcEYmI-gcjcJLJTgt8QJsqvj9gqZyW_h4HxVMAGnC4PRRMHC5l79F91SXwzeNSFS5E5HfWNnuLb-YRtSQUJMciadpiPAW5WBpLbwD8181oGKcFjJNmyDGwYzvTTg0LDLPYDtWY4u55Mh2OjWA');
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col space-y-8">
+          <div>
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Welcome back, Sarah</h2>
+            <p class="mt-1 text-slate-600 dark:text-slate-400">
+              Here's an overview of your recent activity and diagnosis status.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-slate-900/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800"
+          >
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">
+              Upload New Scan
+            </h3>
+            <div
+              class="flex flex-col items-center justify-center p-8 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-lg text-center"
+            >
+              <span
+                class="material-symbols-outlined text-5xl text-slate-400 dark:text-slate-500 mb-2"
+              >
+                cloud_upload
+              </span>
+              <p class="font-semibold text-slate-800 dark:text-slate-200">
+                Drag &amp; drop your files here or click to upload
+              </p>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                Supports DICOM, JPEG, PNG. Max file size 50MB.
+              </p>
+              <button
+                class="mt-6 bg-primary text-white font-semibold py-2 px-6 rounded-lg hover:bg-primary/90 transition-colors duration-300"
+              >
+                Upload Scan
+              </button>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white">Diagnosis Status</h3>
+              <p class="mt-1 text-slate-600 dark:text-slate-400">
+                Track the progress of your submitted scans.
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-lg divide-y divide-slate-200 dark:divide-slate-800"
+            >
+              <div
+                class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-200 rounded-t-lg"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary/10 text-primary p-3 rounded-full flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined">neurology</span>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-slate-800 dark:text-slate-200">MRI Scan - Brain</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Uploaded: 2 days ago</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-2 text-sm font-medium text-amber-600 dark:text-amber-500"
+                >
+                  <span class="material-symbols-outlined text-base">hourglass_top</span>
+                  <span>Pending</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white">Medical History</h3>
+              <p class="mt-1 text-slate-600 dark:text-slate-400">
+                Access your past diagnosis reports.
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-lg divide-y divide-slate-200 dark:divide-slate-800"
+            >
+              <div
+                class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-200 rounded-t-lg"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary/10 text-primary p-3 rounded-full flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined">cardiology</span>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-slate-800 dark:text-slate-200">CT Scan - Chest</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Completed: 1 month ago</p>
+                  </div>
+                </div>
+                <a
+                  class="flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                  href="#"
+                >
+                  <span>View Report</span>
+                  <span class="material-symbols-outlined text-base">arrow_forward</span>
+                </a>
+              </div>
+              <div
+                class="flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-200 rounded-b-lg"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary/10 text-primary p-3 rounded-full flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined">radiology</span>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-slate-800 dark:text-slate-200">
+                      Ultrasound - Abdomen
+                    </p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Completed: 3 months ago
+                    </p>
+                  </div>
+                </div>
+                <a
+                  class="flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                  href="#"
+                >
+                  <span>View Report</span>
+                  <span class="material-symbols-outlined text-base">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>

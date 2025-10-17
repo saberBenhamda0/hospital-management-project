@@ -1,0 +1,47 @@
+      <header class="border-b border-gray-200/50 dark:border-gray-700/50">
+        <div class="container flex items-center justify-between p-4 mx-auto">
+          <div  (click)="handleNavigate('/')" class="flex items-center gap-3 cursor-pointer ">
+            <div class="w-8 h-8 text-primary">
+              <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h1 class="text-xl font-bold text-gray-900 dark:text-white">HealthHub</h1>
+          </div>
+          <nav class="items-center hidden gap-6 md:flex">
+            <a
+            (click)="handleNavigate('/about-us')"
+              class="text-sm font-medium text-gray-600 transition-colors cursor-pointer dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+              >About</a
+            >
+            <a
+              class="text-sm font-medium text-gray-600 transition-colors cursor-pointer dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+            (click)="handleNavigate('/services')"
+              >Services</a
+            >
+            <a
+              class="text-sm font-medium text-gray-600 transition-colors cursor-pointer dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+            (click)="handleNavigate('/contact-us')"
+              >Contact</a
+            >
+          </nav>
+          <div class="flex items-center gap-2">
+            <button
+            (click)="handleNavigate('/login')"
+              class="px-4 py-2 text-sm font-medium transition-colors rounded-lg cursor-pointer bg-primary/20 dark:bg-primary/30 text-primary hover:bg-primary/30 dark:hover:bg-primary/40"
+            >
+              Log In
+            </button>
+            <button
+              class="px-4 py-2 text-sm font-medium transition-colors rounded-lg cursor-pointer bg-primary/20 dark:bg-primary/30 text-primary hover:bg-primary/30 dark:hover:bg-primary/40"
+              (click)="handleNavigate('/signup')"
+            >
+
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </header>

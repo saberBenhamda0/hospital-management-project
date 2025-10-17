@@ -1,0 +1,122 @@
+
+  <body
+    class="text-gray-800 bg-background-light dark:bg-background-dark font-display dark:text-gray-200"
+  >
+    <div class="flex h-screen">
+        <app-sidebar></app-sidebar>
+      <main class="flex flex-col flex-1 overflow-hidden">
+        <header
+          class="flex items-center justify-between h-16 px-8 border-b border-gray-200 dark:border-gray-800"
+        >
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Report Generation</h2>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Review, edit, and finalize automated reports.
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <button
+              class="flex items-center justify-center h-10 gap-2 px-4 text-sm font-medium text-gray-700 transition-colors bg-white border border-gray-300 rounded-lg dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/60"
+            >
+              <span class="material-symbols-outlined">print</span>
+              <span>Print</span>
+            </button>
+            <button
+              class="flex items-center justify-center h-10 gap-2 px-4 text-sm font-bold text-white transition-colors rounded-lg bg-primary hover:bg-primary/90"
+            >
+              <span class="material-symbols-outlined">share</span>
+              <span>Finalize &amp; Share</span>
+            </button>
+          </div>
+        </header>
+        <div class="flex-1 p-8 overflow-y-auto">
+          <div class="max-w-4xl mx-auto">
+            <div
+              class="bg-white border border-gray-200 shadow-sm dark:bg-gray-900/50 rounded-xl dark:border-gray-800"
+            >
+              <div class="p-6 border-b border-gray-200 dark:border-gray-800">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                  Automated Report Content
+                </h3>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                  This report was automatically generated based on the patient's latest scan data.
+                </p>
+              </div>
+              <div class="p-6 space-y-6">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                  <div>
+                    <label class="block mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+                      >Patient</label
+                    >
+                    <input
+                      class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-background-light dark:bg-background-dark dark:border-gray-700 focus:ring-primary focus:border-primary"
+                      type="text"
+                      value="Alex Turner"
+                    />
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+                      >Date of Birth</label
+                    >
+                    <input
+                      class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-background-light dark:bg-background-dark dark:border-gray-700 focus:ring-primary focus:border-primary"
+                      type="text"
+                      value="1986-01-06"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label class="block mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+                    >Diagnosis Summary</label
+                  >
+                  <textarea
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-background-light dark:bg-background-dark dark:border-gray-700 focus:ring-primary focus:border-primary"
+                    rows="3"
+                  >
+Suspected Stage II Lung Cancer. Lesion identified in the upper lobe of the right lung.</textarea
+                  >
+                </div>
+                <div>
+                  <label class="block mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+                    >Scan Analysis</label
+                  >
+                  <textarea
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-background-light dark:bg-background-dark dark:border-gray-700 focus:ring-primary focus:border-primary"
+                    rows="6"
+                  >
+Detailed analysis of recent CT scans highlights a 2.5cm spiculated mass in the right upper lobe. No significant mediastinal or hilar lymphadenopathy is observed. The lesion shows moderate FDG uptake on the PET scan, consistent with malignancy. Comparison with prior scans from 6 months ago shows interval growth.</textarea
+                  >
+                </div>
+                <div>
+                  <label class="block mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+                    >Doctor's Notes</label
+                  >
+                  <textarea
+                    class="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-lg bg-background-light dark:bg-background-dark dark:border-gray-700 focus:ring-primary focus:border-primary dark:placeholder-gray-500"
+                    placeholder="Add your notes, recommendations, or modifications here..."
+                    rows="4"
+                  >
+Initial findings suggest further investigation is required. Biopsy recommended for definitive diagnosis. Plan to discuss with the patient at the next follow-up appointment.</textarea
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-end gap-3 p-6 border-t border-gray-200 bg-gray-50 dark:bg-gray-900/30 dark:border-gray-800 rounded-b-xl"
+              >
+                <button
+                  class="h-10 px-4 text-sm font-medium text-gray-700 transition-colors bg-white border border-gray-300 rounded-lg dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/60"
+                >
+                  Save Draft
+                </button>
+                <button
+                  class="h-10 px-4 text-sm font-bold text-white transition-colors rounded-lg bg-primary hover:bg-primary/90"
+                >
+                  Finalize Report
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>

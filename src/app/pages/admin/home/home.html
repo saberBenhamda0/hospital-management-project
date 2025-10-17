@@ -1,0 +1,279 @@
+
+  <body
+    class="text-gray-800 bg-background-light dark:bg-background-dark font-display dark:text-gray-200"
+  >
+    <div class="flex h-screen">
+      <aside
+        class="flex flex-col w-64 border-r border-gray-200 bg-background-light dark:bg-background-dark dark:border-gray-700"
+      >
+        <div
+          class="flex items-center justify-center h-16 border-b border-gray-200 dark:border-gray-700"
+        >
+          <h1 class="text-xl font-bold text-gray-800 dark:text-white">Admin Panel</h1>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-2">
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-primary/10 dark:bg-primary/20 text-primary"
+            href="#"
+          >
+            <span class="mr-3 material-symbols-outlined">dashboard</span>
+            Dashboard
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary"
+            href="#"
+          >
+            <span class="mr-3 material-symbols-outlined">group</span>
+            User Management
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary"
+            href="#"
+          >
+            <span class="mr-3 material-symbols-outlined">database</span>
+            Resource Management
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary"
+            href="#"
+          >
+            <span class="mr-3 material-symbols-outlined">analytics</span>
+            Analytics
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary"
+            href="#"
+          >
+            <span class="mr-3 material-symbols-outlined">settings</span>
+            Settings
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary"
+            href="#"
+          >
+            <span class="mr-3 material-symbols-outlined">help</span>
+            Support
+          </a>
+        </nav>
+      </aside>
+      <main class="flex-1 p-8 overflow-y-auto">
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Dashboard</h2>
+          <p class="mt-1 text-gray-500 dark:text-gray-400">
+            Overview of system activity and key metrics
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-6 mb-8 md:grid-cols-3">
+          <div
+            class="p-6 bg-white border border-gray-200 rounded-lg dark:bg-background-dark/50 dark:border-gray-700"
+          >
+            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Total Users</p>
+            <p class="mt-1 text-3xl font-bold text-gray-900 dark:text-white">1,250</p>
+          </div>
+          <div
+            class="p-6 bg-white border border-gray-200 rounded-lg dark:bg-background-dark/50 dark:border-gray-700"
+          >
+            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Active Doctors</p>
+            <p class="mt-1 text-3xl font-bold text-gray-900 dark:text-white">75</p>
+          </div>
+          <div
+            class="p-6 bg-white border border-gray-200 rounded-lg dark:bg-background-dark/50 dark:border-gray-700"
+          >
+            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Total Scans</p>
+            <p class="mt-1 text-3xl font-bold text-gray-900 dark:text-white">5,000</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-6 mb-8 lg:grid-cols-2">
+          <div
+            class="p-6 bg-white border border-gray-200 rounded-lg dark:bg-background-dark/50 dark:border-gray-700"
+          >
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="text-base font-medium text-gray-900 dark:text-white">
+                  New Users Over Time
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Last 6 Months</p>
+              </div>
+              <p class="text-sm font-medium text-green-500">+15%</p>
+            </div>
+            <div class="mt-4 h-60">
+              <svg
+                class="w-full h-full"
+                fill="none"
+                preserveAspectRatio="none"
+                viewBox="0 0 472 150"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="text-primary"
+                  d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="3"
+                ></path>
+                <path
+                  d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25 V149 H0 V109Z"
+                  fill="url(#user-chart-gradient)"
+                ></path>
+                <defs>
+                  <linearGradient
+                    gradientUnits="userSpaceOnUse"
+                    id="user-chart-gradient"
+                    x1="236"
+                    x2="236"
+                    y1="1"
+                    y2="149"
+                  >
+                    <stop stop-color="#1193d4" stop-opacity="0.2"></stop>
+                    <stop offset="1" stop-color="#1193d4" stop-opacity="0"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div
+              class="flex justify-around mt-2 text-xs font-medium text-gray-500 dark:text-gray-400"
+            >
+              <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span
+              ><span>Jun</span>
+            </div>
+          </div>
+          <div
+            class="p-6 bg-white border border-gray-200 rounded-lg dark:bg-background-dark/50 dark:border-gray-700"
+          >
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="text-base font-medium text-gray-900 dark:text-white">
+                  Scans Uploaded by Month
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Last 5 Months</p>
+              </div>
+              <p class="text-sm font-medium text-green-500">+10%</p>
+            </div>
+            <div class="grid items-end grid-flow-col gap-4 px-3 mt-4 h-60">
+              <div class="rounded-t bg-primary/20 dark:bg-primary/30" style="height: 50%"></div>
+              <div class="rounded-t bg-primary/20 dark:bg-primary/30" style="height: 40%"></div>
+              <div class="rounded-t bg-primary/20 dark:bg-primary/30" style="height: 60%"></div>
+              <div class="rounded-t bg-primary/20 dark:bg-primary/30" style="height: 30%"></div>
+              <div class="rounded-t bg-primary/20 dark:bg-primary/30" style="height: 70%"></div>
+            </div>
+            <div
+              class="flex justify-around mt-2 text-xs font-medium text-gray-500 dark:text-gray-400"
+            >
+              <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">System Resources</h3>
+          <div class="overflow-x-auto border border-gray-200 rounded-lg dark:border-gray-700">
+            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <thead class="bg-gray-50 dark:bg-gray-800/50">
+                <tr>
+                  <th
+                    class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-gray-400"
+                    scope="col"
+                  >
+                    Resource
+                  </th>
+                  <th
+                    class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-gray-400"
+                    scope="col"
+                  >
+                    Status
+                  </th>
+                  <th
+                    class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-gray-400"
+                    scope="col"
+                  >
+                    Capacity
+                  </th>
+                  <th
+                    class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-gray-400"
+                    scope="col"
+                  >
+                    Usage
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="bg-white divide-y divide-gray-200 dark:bg-background-dark/50 dark:divide-gray-700"
+              >
+                <tr>
+                  <td
+                    class="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Storage
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="inline-flex px-3 py-1 text-xs font-semibold leading-5 text-green-800 rounded-full bg-green-100/80 dark:bg-green-900/40 dark:text-green-200"
+                      >Available</span
+                    >
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                    10 TB
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                    <div class="flex items-center gap-3">
+                      <div class="w-24 h-2 bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="h-2 rounded-full bg-primary" style="width: 80%"></div>
+                      </div>
+                      <span class="font-medium text-gray-900 dark:text-white">80%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Bandwidth
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="inline-flex px-3 py-1 text-xs font-semibold leading-5 text-green-800 rounded-full bg-green-100/80 dark:bg-green-900/40 dark:text-green-200"
+                      >Available</span
+                    >
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                    100 Gbps
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                    <div class="flex items-center gap-3">
+                      <div class="w-24 h-2 bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="h-2 rounded-full bg-primary" style="width: 50%"></div>
+                      </div>
+                      <span class="font-medium text-gray-900 dark:text-white">50%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Compute
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="inline-flex px-3 py-1 text-xs font-semibold leading-5 text-green-800 rounded-full bg-green-100/80 dark:bg-green-900/40 dark:text-green-200"
+                      >Available</span
+                    >
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                    1000 Cores
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                    <div class="flex items-center gap-3">
+                      <div class="w-24 h-2 bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="h-2 rounded-full bg-primary" style="width: 70%"></div>
+                      </div>
+                      <span class="font-medium text-gray-900 dark:text-white">70%</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
