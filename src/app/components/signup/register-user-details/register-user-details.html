@@ -1,0 +1,151 @@
+
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#101828] dark:text-white"
+  >
+    <div class="relative flex flex-col items-center w-full min-h-screen">
+
+      <main class="flex-1 w-full max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-8">
+          <!-- Page Heading -->
+          <div class="flex flex-col items-center text-center">
+            <p
+              class="text-3xl font-bold tracking-tighter text-slate-900 dark:text-white sm:text-4xl"
+            >
+              Tell Us a Little More About Yourself
+            </p>
+            <p class="mt-2 text-base text-slate-500 dark:text-slate-400">
+              This will help your doctor personalize your care.
+            </p>
+          </div>
+          <!-- Profile Picture Uploader -->
+          <div
+            class="flex flex-col items-center w-full gap-4 p-6 text-center border border-dashed rounded-xl border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50"
+          >
+            <div
+              class="flex items-center justify-center w-24 h-24 rounded-full bg-slate-200 dark:bg-slate-700"
+            >
+              <span class="text-4xl material-symbols-outlined text-slate-500 dark:text-slate-400"
+                >person</span
+              >
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <p class="text-lg font-semibold text-slate-900 dark:text-white">
+                Upload a Profile Picture
+              </p>
+              <p class="text-sm text-slate-500 dark:text-slate-400">Upload or drag and drop</p>
+            </div>
+            <button
+              class="flex items-center justify-center h-10 gap-2 px-4 overflow-hidden text-sm font-semibold bg-white border rounded-lg cursor-pointer dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/50"
+            >
+              <span class="text-base material-symbols-outlined">upload_file</span>
+              <span class="truncate">Upload Image</span>
+            </button>
+          </div>
+          <!-- Personal Information Form -->
+          <div class="flex flex-col w-full gap-6">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <label class="flex flex-col">
+                <p class="pb-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  First Name
+                </p>
+                <input
+                  class="flex-1 w-full p-3 overflow-hidden text-sm bg-white border rounded-lg resize-none form-input h-11 border-slate-300 dark:border-slate-700 dark:bg-slate-900 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20"
+                  placeholder="Enter your first name"
+                  type="text"
+                  value=""
+                />
+              </label>
+              <label class="flex flex-col">
+                <p class="pb-2 text-sm font-medium text-slate-700 dark:text-slate-300">Last Name</p>
+                <input
+                  class="flex-1 w-full p-3 overflow-hidden text-sm bg-white border rounded-lg resize-none form-input h-11 border-slate-300 dark:border-slate-700 dark:bg-slate-900 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20"
+                  placeholder="Enter your last name"
+                  type="text"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <label class="flex flex-col">
+                <p class="pb-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Phone Number
+                </p>
+                <input
+                  class="flex-1 w-full p-3 overflow-hidden text-sm bg-white border rounded-lg resize-none form-input h-11 border-slate-300 dark:border-slate-700 dark:bg-slate-900 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20"
+                  placeholder="(123) 456-7890"
+                  type="tel"
+                  value=""
+                />
+              </label>
+              <label class="flex flex-col">
+                <p class="pb-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Email Address
+                </p>
+                <input
+                  class="flex-1 w-full p-3 overflow-hidden text-sm bg-white border rounded-lg resize-none form-input h-11 border-slate-300 dark:border-slate-700 dark:bg-slate-900 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20"
+                  type="email"
+                  value="patient.name@example.com"
+                />
+              </label>
+            </div>
+            <div class="flex flex-col">
+              <p class="pb-2 text-sm font-medium text-slate-700 dark:text-slate-300">Gender</p>
+              <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                <label
+                  class="flex cursor-pointer items-center gap-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-3 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:ring-2 has-[:checked]:ring-primary/50 dark:has-[:checked]:bg-primary/20"
+                >
+                  <input
+                    class="w-4 h-4 form-radio border-slate-400 text-primary focus:ring-primary"
+                    name="gender"
+                    type="radio"
+                  />
+                  <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Male</span>
+                </label>
+                <label
+                  class="flex cursor-pointer items-center gap-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-3 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:ring-2 has-[:checked]:ring-primary/50 dark:has-[:checked]:bg-primary/20"
+                >
+                  <input
+                    class="w-4 h-4 form-radio border-slate-400 text-primary focus:ring-primary"
+                    name="gender"
+                    type="radio"
+                  />
+                  <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Female</span>
+                </label>
+                <label
+                  class="flex cursor-pointer items-center gap-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-3 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:ring-2 has-[:checked]:ring-primary/50 dark:has-[:checked]:bg-primary/20"
+                >
+                  <input
+                    class="w-4 h-4 form-radio border-slate-400 text-primary focus:ring-primary"
+                    name="gender"
+                    type="radio"
+                  />
+                  <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Other</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Action Buttons -->
+          <div
+            class="flex flex-col items-center gap-4 pt-6 border-t border-slate-200 dark:border-slate-800 sm:flex-row-reverse"
+          >
+            <button
+              class="flex items-center justify-center w-full px-6 overflow-hidden text-sm font-semibold text-white rounded-lg cursor-pointer h-11 bg-primary hover:bg-primary/90 sm:w-auto"
+            >
+              <span class="truncate">Complete Profile</span>
+            </button>
+            <button
+              class="flex items-center justify-center w-full px-6 overflow-hidden text-sm font-semibold rounded-lg cursor-pointer h-11 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 sm:w-auto"
+            >
+              <span class="truncate">Back</span>
+            </button>
+          </div>
+          <!-- Security Notice -->
+          <p class="text-xs text-center text-slate-500 dark:text-slate-400">
+            Your personal information is confidential and secure.
+            <a class="text-primary hover:underline" href="#">Learn more about our Privacy Policy</a
+            >.
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>

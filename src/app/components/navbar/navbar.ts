@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   imports: [ReactiveFormsModule],
+  standalone: true,
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'
 })

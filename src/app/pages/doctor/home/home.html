@@ -34,6 +34,8 @@
                 class="w-full py-2 pl-10 pr-4 text-black border rounded-lg bg-background-light dark:bg-background-dark border-primary/20 focus:ring-primary focus:border-primary dark:text-white placeholder-black/40 dark:placeholder-white/40"
                 placeholder="Search patients by name or ID"
                 type="search"
+                #seach_term
+                (input)="handleSearch(seach_term.value)"
               />
             </div>
             <div class="flex items-center gap-2">
@@ -113,15 +115,17 @@
                 </tr>
               </thead>
               <tbody>
+                @for (item of filtered_array; track item.id; let i = $index) {
                 <tr class="border-b border-primary/20 hover:bg-primary/5 dark:hover:bg-primary/10">
-                  <td class="px-6 py-4 font-medium text-black/60 dark:text-white/60">PT1001</td>
-                  <td class="px-6 py-4 font-semibold text-black dark:text-white">Sophia Clark</td>
-                  <td class="px-6 py-4 text-black/80 dark:text-white/80">45</td>
-                  <td class="px-6 py-4 text-black/80 dark:text-white/80">Female</td>
+                  <td class="px-6 py-4 font-medium text-black/60 dark:text-white/60">{{item.id}}</td>
+                  <td class="px-6 py-4 font-semibold text-black dark:text-white">{{item.name}}</td>
+                  <td class="px-6 py-4 text-black/80 dark:text-white/80">{{item.age}}</td>
+                  <td class="px-6 py-4 text-black/80 dark:text-white/80">{{item.gender}}</td>
                   <td class="px-6 py-4">
                     <span
-                      class="px-2 py-1 text-xs font-medium text-red-800 bg-red-100 rounded-full dark:bg-red-900/30 dark:text-red-300"
-                      >High Risk</span
+                    [ngClass]="item.status == 1 ? 'text-red-800 bg-red-100' : item.status == 2 ? 'text-green-800 bg-green-100' : 'text-blue-800 bg-blue-100'"
+                      class="px-2 py-1 text-xs font-medium rounded-full dark:bg-red-900/30 dark:text-red-300"
+                      >{{item.status == 1 ? "High Risk" : item.status == 2 ? "Confirmed" : "Low Risk"}}</span
                     >
                   </td>
                   <td class="px-6 py-4 space-x-2 text-center">
@@ -131,42 +135,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr class="border-b border-primary/20 hover:bg-primary/5 dark:hover:bg-primary/10">
-                  <td class="px-6 py-4 font-medium text-black/60 dark:text-white/60">PT1002</td>
-                  <td class="px-6 py-4 font-semibold text-black dark:text-white">Ethan Bennett</td>
-                  <td class="px-6 py-4 text-black/80 dark:text-white/80">62</td>
-                  <td class="px-6 py-4 text-black/80 dark:text-white/80">Male</td>
-                  <td class="px-6 py-4">
-                    <span
-                      class="px-2 py-1 text-xs font-medium text-green-800 bg-green-100 rounded-full dark:bg-green-900/30 dark:text-green-300"
-                      >Confirmed</span
-                    >
-                  </td>
-                  <td class="px-6 py-4 space-x-2 text-center">
-                    <button class="font-medium text-primary hover:underline">View Scans</button>
-                    <button class="font-medium cursor-not-allowed text-primary/70">
-                      View Diagnosis
-                    </button>
-                  </td>
-                </tr>
-                <tr class="border-b border-primary/20 hover:bg-primary/5 dark:hover:bg-primary/10">
-                  <td class="px-6 py-4 font-medium text-black/60 dark:text-white/60">PT1003</td>
-                  <td class="px-6 py-4 font-semibold text-black dark:text-white">Olivia Carter</td>
-                  <td class="px-6 py-4 text-black/80 dark:text-white/80">58</td>
-                  <td class="px-6 py-4 text-black/80 dark:text-white/80">Female</td>
-                  <td class="px-6 py-4">
-                    <span
-                      class="px-2 py-1 text-xs font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900/30 dark:text-blue-300"
-                      >Low Risk</span
-                    >
-                  </td>
-                  <td class="px-6 py-4 space-x-2 text-center">
-                    <button class="font-medium text-primary hover:underline">View Scans</button>
-                    <button class="font-medium text-primary hover:underline">
-                      Confirm Diagnosis
-                    </button>
-                  </td>
-                </tr>
+                }
               </tbody>
             </table>
           </div>
